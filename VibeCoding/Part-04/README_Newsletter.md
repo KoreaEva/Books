@@ -42,7 +42,7 @@ pip install requests beautifulsoup4 tqdm
 ## 사용 방법
 
 ### 1. email_list.txt 설정
-`VibeCoding/Chapter_04/email_list.txt`에 수신자 이메일 주소 입력:
+`VibeCoding/Part_04/email_list.txt`에 수신자 이메일 주소 입력:
 ```
 recipient1@example.com
 recipient2@example.com
