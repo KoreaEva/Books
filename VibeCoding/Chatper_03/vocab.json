@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "word": "love",
+    "meaning": "사랑",
+    "example": "I love you",
+    "box": 2,
+    "created_at": "2025-10-15T20:46:32.390702",
+    "last_review": "2025-10-15T20:46:45.211913",
+    "next_review": "2025-10-17",
+    "correct_streak": 1,
+    "wrong_streak": 0
+  },
+  {
+    "id": 2,
+    "word": "developer",
+    "meaning": "개발자",
+    "example": "I am developer.",
+    "box": 2,
+    "created_at": "2025-10-15T21:14:21.317175",
+    "last_review": "2025-10-15T21:14:33.370490",
+    "next_review": "2025-10-17",
+    "correct_streak": 1,
+    "wrong_streak": 0
+  }
+]

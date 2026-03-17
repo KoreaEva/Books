@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "word": "love",
+    "meaning": "사랑",
+    "example": "I love you",
+    "box": 1,
+    "created_at": "2025-09-30T13:54:05.158593",
+    "last_review": null,
+    "next_review": "2025-10-01",
+    "correct_streak": 0,
+    "wrong_streak": 0
+  },
+  {
+    "id": 2,
+    "word": "have",
+    "meaning": "가지다",
+    "example": "I have a dog",
+    "box": 1,
+    "created_at": "2025-09-30T13:55:23.769408",
+    "last_review": null,
+    "next_review": "2025-10-01",
+    "correct_streak": 0,
+    "wrong_streak": 0
+  }
+]
