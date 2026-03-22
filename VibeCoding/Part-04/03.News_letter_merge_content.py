@@ -10,10 +10,12 @@ import html
 from bs4 import BeautifulSoup
 from tqdm import tqdm
 import os
+from dotenv import load_dotenv
+load_dotenv()
 
 # Naver API credentials (hardcoded as requested)
-NAVER_CLIENT_ID = "5HZ2JClfp4xSRJ1MIdAu"
-NAVER_CLIENT_SECRET = "8z76y_JHgR"
+NAVER_CLIENT_ID = os.environ.get("NAVER_CLIENT_ID")
+NAVER_CLIENT_SECRET = os.environ.get("NAVER_CLIENT_SECRET")
 ENDPOINT = "https://openapi.naver.com/v1/search/news.json"
 
 HEADERS = {

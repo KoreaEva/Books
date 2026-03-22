@@ -13,10 +13,12 @@ from typing import List, Dict
 from bs4 import BeautifulSoup
 from tqdm import tqdm
 from datetime import datetime
+from dotenv import load_dotenv
+load_dotenv()
 
 # Defaults
-DEFAULT_CLIENT_ID = os.environ.get("NAVER_CLIENT_ID", "5HZ2JClfp4xSRJ1MIdAu")
-DEFAULT_CLIENT_SECRET = os.environ.get("NAVER_CLIENT_SECRET", "8z76y_JHgR")
+DEFAULT_CLIENT_ID = os.environ.get("NAVER_CLIENT_ID")
+DEFAULT_CLIENT_SECRET = os.environ.get("NAVER_CLIENT_SECRET")
 ENDPOINT = "https://openapi.naver.com/v1/search/news.json"
 
 def strip_html_tags(text: str) -> str:
