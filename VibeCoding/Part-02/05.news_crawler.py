@@ -69,7 +69,7 @@ def fetch_news(keyword=None, max_items=5):
                 else:
                     source = "알 수 없는 소스"
                 
-                # 요약 생성 (제목을 기반으로 간단한 요약)
+                # 제목 길이 정리 (제목이 길 경우 적절하게 길이를 줄임)
                 summary = generate_summary(title)
                 
                 # 발행일시 포맷팅
@@ -103,11 +103,11 @@ def fetch_news(keyword=None, max_items=5):
 
 def generate_summary(title):
     """
-    제목을 기반으로 간단한 요약 생성
+    제목이 길 경우 적절하게 길이를 줄임
     """
-    # 제목이 너무 긴 경우 적절히 요약
+    # 제목이 너무 긴 경우 적절히 줄인다.
     if len(title) > 50:
-        # 문장을 나누고 첫 번째 문장 또는 주요 부분만 사용
+        # 문장을 나누고 첫 번째 문장 또는 앞 부분만 사용
         sentences = re.split(r'[.!?]', title)
         if len(sentences) > 1 and len(sentences[0]) > 20:
             return sentences[0].strip() + "..."
